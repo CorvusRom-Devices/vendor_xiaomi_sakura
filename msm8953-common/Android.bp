@@ -34,6 +34,8 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "both",
+	shared_libs: ["libbase", "libc++", "libc", "libchrome", "libcutils", "libdl", "libhidlbase", "liblog", "libm", "libutils", "vendor.qti.hardware.btconfigstore@1.0"],
+	check_elf_files: false,
 	prefer: true,
 }
 
@@ -52,6 +54,8 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "both",
+	shared_libs: ["libc++", "libc", "libcutils", "libdl", "libexpat", "liblog", "libm", "libutils"],
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -71,6 +75,8 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "both",
+	shared_libs: ["libc++", "libc", "libcutils", "libdl", "liblog", "libm", "libutils"],
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -90,6 +96,8 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "both",
+	shared_libs: ["libbinder", "libc++", "libc", "libcutils", "libdl", "liblog", "libm", "libutils"],
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -109,6 +117,7 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "both",
+	shared_libs: ["libc++", "libc", "libcutils", "libdl", "liblog", "libm"],
 	prefer: true,
 	soc_specific: true,
 }
@@ -128,6 +137,7 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "both",
+	shared_libs: ["libc++", "libc", "libcutils", "libdl", "liblog", "libm"],
 	prefer: true,
 	soc_specific: true,
 }
@@ -144,6 +154,8 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "64",
+	shared_libs: ["libc++", "libc", "libcutils", "libdl", "liblog", "libm", "libutils"],
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
